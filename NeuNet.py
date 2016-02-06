@@ -13,7 +13,20 @@ class NeuralNetwork(object):
         self.act = tanh
         self.act_prime = tanh_prime
         ##TODO: initalize the weights ##
-            
+
+    def fit(self, data, y, steps=100000, rate=0.2):
+        #Remove the pass when finished
+        pass
+        # TODO: Make a neural network 
+        # that fits the data
+
+    def predict(self, x):
+        #Remove the pass when finished
+        pass
+        # TODO: Implement the 
+        # forward propagation algorithm
+
+
     ##### IGNORE THIS FOR NOW ######
     # The implements the backpropagation algorithm
     # Which we won't have time to go over
@@ -45,15 +58,3 @@ class NeuralNetwork(object):
             layer = np.concatenate((np.atleast_2d(one), a[i]), axis=1)
             gradients.append(layer.T.dot(deltas[i]))
         return gradients
-
-    def fit(self, data, y, steps=100000, rate=0.2):
-        #Remove the pass when finished
-        pass
-        # TODO: Make a neural network 
-        # that fits the data
-
-    def predict(self, x):
-        #Remove the pass when finished
-        pass
-        # TODO: Implement the 
-        # forward propagation algorithm
