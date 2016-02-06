@@ -28,7 +28,7 @@ class NeuralNetwork(object):
 
 
     ##### IGNORE THIS FOR NOW ######
-    # The implements the backpropagation algorithm
+    # This implements the backpropagation algorithm
     # Which we won't have time to go over
     def get_gradients(self, data, y):
         one = np.ones(1)
